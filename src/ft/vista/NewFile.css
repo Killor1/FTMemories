@@ -1,0 +1,24 @@
+.background {
+   -fx-background-image: url("fondo.png"); 
+	-fx-background-repeat: stretch;   
+    -fx-background-size: 1920 1080;
+    -fx-background-position: center center;    
+}
+.btUser {	  
+    -fx-background-color: transparent;     
+}
+
+.btUser:hover{
+	-fx-background-color: transparent;      
+}
+
+#exit{
+	-fx-background-color: transparent;     
+}
+
+.list-cell{
+  -fx-font: 18pt "Arial";
+}
+.bar{
+	-fx-opacity: 0.8;
+}

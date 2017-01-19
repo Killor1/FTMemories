@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" 
+	prefHeight="${screen.visualBounds.height}" prefWidth="${screen.visualBounds.width}"
+	styleClass="background" stylesheets="@NewFile.css" 
+	xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" 
+	fx:controller="ft.controllers.FTAdminController">
+	
+   <children>
+      <Button fx:id="exit" layoutX="581.0" layoutY="345.0" mnemonicParsing="false" onAction="#exit" onMouseEntered="#exitOn" onMouseExited="#exitOff"
+       AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+       
+      <HBox prefHeight="64.0" prefWidth="418.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="30.0">
+         <children>
+            <VBox prefHeight="62.0" prefWidth="193.0">
+               <children>
+                   <Label fx:id="user" prefHeight="30.0" prefWidth="129.0" text="Usuario: ">
+                     <font>
+                        <Font name="DejaVu Sans Bold" size="24.0" />
+                     </font></Label>
+                  <Label fx:id="pass" text="Contraseña: ">
+                     <font>
+                        <Font name="DejaVu Sans Bold" size="24.0" />
+                     </font></Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="62.0" prefWidth="152.0">
+               <children>
+                  <TextField fx:id="userName" prefHeight="31.0" prefWidth="106.0">
+                     <font>
+                        <Font name="Cambria Math" size="18.0" />
+                     </font></TextField>
+                  <PasswordField fx:id="userPass">
+                     <font>
+                        <Font name="Cambria Math" size="18.0" />
+                     </font></PasswordField>
+               </children>
+            </VBox>
+            <Button fx:id="ok" mnemonicParsing="false" onAction="#checkAdminPass" prefHeight="64.0" prefWidth="77.0" text="OK">
+               <font>
+                  <Font name="DejaVu Sans Condensed Bold" size="24.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" color="#323633d1" height="61.43" offsetX="3.0" offsetY="3.0" radius="32.5475" width="70.76" />
+               </effect>
+            </Button>
+         </children>
+      </HBox>
+      <Button fx:id="back" layoutX="507.0" layoutY="345.0" mnemonicParsing="false" onAction="#initVistaInicial" onMouseEntered="#backOn" onMouseExited="#backOff"
+       stylesheets="@NewFile.css" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="195.0" />
+       
+   </children>
+</AnchorPane>
